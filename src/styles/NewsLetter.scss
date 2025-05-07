@@ -1,0 +1,99 @@
+.newsletter-section {
+  background: #ffe9dc;
+  padding: 40px 20px;
+  text-align: center;
+
+  .newsletter-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    .cadastro-desc {
+      font-size: 16px;
+      font-weight: lighter;
+      color: #db5555;
+      margin: 0;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 10px;
+
+      input {
+        padding: 10px;
+        font-size: 14px;
+        width: 250px;
+        outline: none;
+      }
+
+      button {
+        width: 200px;
+        font-size: 14px;
+        background: #ff0000;
+        border: none;
+        border-radius: 2px;
+        color: #fff;
+        cursor: pointer;
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .newsletter-success {
+    margin-top: 5px;
+    height: 70px;           
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;              
+  }
+  
+  .cupom-desc {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #000;
+    margin: 0;
+  }
+  
+  .coupon-group {
+    display: flex;
+    align-items: center;
+    gap: 0;                 
+  }
+  
+  .coupon-code {
+    background: #fff;
+    padding: 12px;
+    width: 150px;
+    border: 1px dashed #ff0000;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .copy-button {
+    background: #fc0000;
+    font-weight: lighter;
+    padding: 15.5px;
+    width: 100px;
+    margin-left: -1px;      
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s;
+  }
+  
+  .copy-button:hover {
+    background: #cc0000;
+  }
+}

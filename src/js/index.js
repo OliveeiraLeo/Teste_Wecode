@@ -1,0 +1,11 @@
+export { default as Header }      from './Header';
+export { default as CepModal }    from './CepModal';
+export { default as Carousel }    from './Carousel'; 
+export { default as Categorias }  from './Categorias';
+export { default as Banners }     from './Banners';
+export { default as ShoesMenu }   from './ShoesMenu';
+export { default as CartModal }   from './CartModal';
+export { default as CartSidebar } from './CartSideBar';
+export { default as BlogPosts }   from './BlogPosts';
+export { default as NewsLetter }  from './NewsLetter';
+export { default as Footer }      from './Footer';

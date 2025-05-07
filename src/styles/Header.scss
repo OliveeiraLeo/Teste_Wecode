@@ -1,0 +1,170 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  height: 85px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  z-index: 1000;
+
+  &.transparent {
+    background-color: transparent;
+    .nav-link {
+      color: #ffffff;
+    }
+    .header-btn img,
+    .logo-icon {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  &.solid {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    .nav-link {
+      color: #000000;
+    }
+    .header-btn img,
+    .logo-icon {
+      filter: brightness(0) saturate(100%);
+    }
+  }
+
+  .nav-link.outlet {
+    color: #ff0000 !important;
+  }
+}
+
+.dropdown-item {
+  color: #000000;
+}
+
+.logo-container {
+  margin-right: 50px;
+  margin-top: 15px;
+  flex-shrink: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+  margin-right: 25px;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  border-radius: 2px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding: 12px;
+  width: 70px;
+  z-index: 2001;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+.nav-item:hover .nav-link {
+  text-decoration: underline;
+}
+
+.dropdown-item {
+  background: none;
+  border: none;
+  font-size: 15px;
+  padding: 8px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: none;
+  text-decoration: underline;
+}
+
+.nav-item .sapatos-link:hover .shoe-image,
+.nav-item .escarpins-link:hover .escarpins-image,
+.nav-item .sandalias-link:hover .sandalias-image,
+.nav-item .botas-link:hover .botas-image {
+  display: block;
+}
+
+.shoe-image,
+.escarpins-image,
+.sandalias-image,
+.botas-image {
+  position: absolute;
+  top: 25px;
+  left: 100%;
+  margin-left: 20px;
+  display: none;
+  width: 315px;
+  z-index: 2002;
+  border-radius: 5px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-left: 1000px;
+  margin-top: 25px;
+  z-index: 2000;
+}
+
+.header-btn {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.header-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo-icon {
+  height: 30px;
+  margin-left: 60px;
+  width: auto;
+}
+
+.cart-icon,
+.perfil-icon,
+.lupa-icon {
+  width: 30px;
+  height: 20px;
+}

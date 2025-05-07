@@ -1,0 +1,33 @@
+.categorias-title {
+    margin-left: 90px;
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: lighter;
+    text-align: left;
+  }
+  
+  .categorias-container {
+    display: flex;
+    gap: 30px;            
+    margin-left: 80px;    
+    margin-top: 40px;     
+  }
+  
+  .categoria-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  
+    img {
+      width: 410px;
+      height: auto;
+      border-radius: 3px;
+      transition: transform 0.3s ease;
+    }
+  
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+  
